@@ -24,14 +24,7 @@ function onClick (Event) {
     return;
 }
 
-//const onClick = (Event) => {
-    //Event.preventDefault();
-    //if (!Event.target.classList.contains('.gallery__image')) 
-    //return;
-
-galleryEl.addEventListener('click', onClick);
-
-const instance = basicLightbox.create(`<div class = "modal"><img src = '${Event.target.dataset.source}'></div>`, {
+const instance = basicLightbox.create(`<div class = "modal"><img src = '${Event.target.dataset.source}' ></div>`, {
     onOpen: (instance) => {
         window.addEventListener('keydown', onKeyboardClick);
         console.log('onOpen', instance);
@@ -50,6 +43,5 @@ function onKeyboardClick (Event) {
     };
 };
 };
-//console.log(galleryItems);
 
 
