@@ -20,7 +20,7 @@ galleryEl.addEventListener('click', onClick);
 
 function onClick (Event) {
     Event.preventDefault();
-    if (!Event.target.classList.contains('.gallery__image')) {
+    if (!Event.target.classList.contains('gallery__image')) {
     return;
 }
 
